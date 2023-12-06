@@ -38,7 +38,7 @@ export default {
 				alert('Вы не ввели ссылку')
 				return
 			}
-			fetch(`http://127.0.0.1:3000/get-files?url=${url}`)
+			fetch(`http://241a3a7ab2d9.vps.myjino.ru:49162/get-files?url=${url}`)
 				.then(async d => {
 					if (d.status != 200) {
 						throw new Error('Запрашиваемый ресурс недоступен')
